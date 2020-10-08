@@ -20,7 +20,7 @@ const StyledTableCell = withStyles((theme) => ({
   },
   body: {
     fontSize: 15,
-    border: '.5px solid black',
+    // border: '.5px solid black',
    
     padding: 1,
    
