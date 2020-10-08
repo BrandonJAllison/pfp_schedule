@@ -1,5 +1,5 @@
 import React from 'react';
-import Login from './Login'
+// import Login from './Login'
 import Scheduler from './Scheduler'
 
 
@@ -8,8 +8,8 @@ const App = () => {
   return (
    
      <div>
-      <Login/> 
-       {/* <Scheduler/> */}
+      {/* <Login/>  */}
+       <Scheduler/>
      </div>
     
   );
