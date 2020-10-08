@@ -96,7 +96,7 @@ export default function CustomizedTables() {
       <Table className={classes.table} aria-label="customized table">
       <TableHead>
           <TableRow >
-            <StyledTableCell align="center" style={{width: '7%', padding: '5px'}} ><img src={Logo} style={{height: '60px'}}/></StyledTableCell>
+            <StyledTableCell align="center" style={{width: '7%', padding: '5px'}} ><img src={Logo} alt = "logo" style={{height: '60px'}}/></StyledTableCell>
             <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/05</StyledTableCell>
             <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/06</StyledTableCell>
             <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/07</StyledTableCell>

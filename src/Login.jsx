@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function SignIn({}) {
+function SignIn() {
   const classes = useStyles();
   const history = useHistory();
 
