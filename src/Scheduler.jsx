@@ -92,7 +92,7 @@ export default function CustomizedTables() {
     <TableContainer component={Paper} >
       <div style={{background: '#B31538', padding: '5px', display:'flex', justifyContent: 'center', alrignItems: 'center' }}>
         <img src={Logo} style={{height: '80px',  marginRight: '20px'}} atl='Logo'/>
-        <h2 style={{color: 'white'}}>Employee Production <br></br> Schedule</h2>
+        <h2 style={{color: 'white', textAlign:'center'}}>Employee Production <br></br> Schedule</h2>
       </div>
       <Table className={classes.table} aria-label="customized table">
       <TableHead style={{background: '#D9EEF7'}}>
