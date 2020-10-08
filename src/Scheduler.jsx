@@ -7,6 +7,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Logo from './assets/footer-logo.png'
 
 
 const StyledTableCell = withStyles((theme) => ({
@@ -43,36 +44,36 @@ function createData(name, monday, tuesday, wednesday, thursday, friday, saturday
 }
 
 const rows = [
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
-  createData('John Smith', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job', 'Job'),
+  createData('Mark', '', '', '', '', '', '', ''),
+  createData('Harry', '', '', '', '', '', '', ''),
+  createData('John M', '', '', '', '', '', '', ''),
+  createData('Richard', '', '', '', '', '', '', ''),
+  createData('Darren', '', '', '', '', '', '', ''),
+  createData('Rock', '', '', '', '', '', '', ''),
+  createData('Brandon', '', '', '', '', '', '', ''),
+  createData('Mike B.', '', '', '', '', '', '', ''),
+  createData('Eric', '', '', '', '', '', '', ''),
+  createData('Nick', '', '', '', '', '', '', ''),
+  createData('Todd', '', '', '', '', '', '', ''),
+  createData('John B.', '', '', '', '', '', '', ''),
+  createData('Matt H.', '', '', '', '', '', '', ''),
+  createData('Kristian', '', '', '', '', '', '', ''),
+  createData('Tery', '', '', '', '', '', '', ''),
+  createData('Dustin', '', '', '', '', '', '', ''),
+  createData('Sam', '', '', '', '', '', '', ''),
+  createData('Ken', '', '', '', '', '', '', ''),
+  createData('Colten', '', '', '', '', '', '', ''),
+  createData('Lawerence', '', '', '', '', '', '', ''),
+  createData('Mike Str.', '', '', '', '', '', '', ''),
+  createData('Ethan', '', '', '', '', '', '', ''),
+  createData('Gary', '', '', '', '', '', '', ''),
+  createData('Ryan K.', '', '', '', '', '', '', ''),
+  createData('Jeff', '', '', '', '', '', '', ''),
+  createData('Chase', '', '', '', '', '', '', ''),
+  createData('Charles', '', '', '', '', '', '', ''),
+  createData('Mike W.', '', '', '', '', '', '', ''),
+  createData('Tony', '', '', '', '', '', '', ''),
+ 
 
 
 ];
@@ -87,18 +88,22 @@ export default function CustomizedTables() {
   const classes = useStyles();
 
   return (
+   
     <TableContainer component={Paper} >
+      {/* <div style={{background: 'black', padding: '5px', }}>
+        <img src={Logo} style={{height: '60px', marginLeft: '100px'}}/>
+      </div> */}
       <Table className={classes.table} aria-label="customized table">
       <TableHead>
-          <TableRow>
-            <StyledTableCell align="center" style={{padding: 2}} >Penn Fire Protection</StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true" >10/05</StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true" >10/06</StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true">10/07</StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true">10/08</StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true">10/09</StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true">10/10</StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true">10/11</StyledTableCell>
+          <TableRow >
+            <StyledTableCell align="center" style={{width: '7%', padding: '5px'}} ><img src={Logo} style={{height: '60px'}}/></StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/05</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/06</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/07</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/08</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/09</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/10</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/11</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableHead>
