@@ -8,8 +8,8 @@ const App = () => {
   return (
    
      <div>
-       <Login/>
-       {/* <Scheduler/> */}
+      <Login/> 
+       <Scheduler/>
      </div>
     
   );
