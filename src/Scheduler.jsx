@@ -20,7 +20,7 @@ const StyledTableCell = withStyles((theme) => ({
   },
   body: {
     fontSize: 15,
-   
+    border: '.5px solid black',
    
     padding: 1,
    
@@ -97,13 +97,13 @@ export default function CustomizedTables() {
       <TableHead style={{background: '#D9EEF7'}}>
           <TableRow style={{background: '#D9EEF7'}} >
             <StyledTableCell align="center" style={{width: '7%', padding: '5px'}} ></StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/05</StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/06</StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/07</StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/08</StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/09</StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/10</StyledTableCell>
-            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/11</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/05/2020</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/06/2020</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/07/2020</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/08/2020</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/09/2020</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/10/2020</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/11/2020</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableHead>
@@ -121,7 +121,7 @@ export default function CustomizedTables() {
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.name} align="center" style={{border: '1px solid black'}}>
-              <StyledTableCell component="th" scope="row" contentEditable="true">
+              <StyledTableCell component="th" scope="row" contentEditable="true" style={{paddingLeft: '5px'}}>
                 {row.name}
               </StyledTableCell>
               <StyledTableCell align="center" contentEditable="true" >{row.monday}</StyledTableCell>
