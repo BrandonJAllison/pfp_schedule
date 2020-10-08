@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -13,6 +13,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Logo from './assets/footer-logo.png'
 import { useHistory } from "react-router-dom";
+import useSignUpForm from './CustomHooks';
 
 
 
@@ -64,20 +65,40 @@ function SignIn({}) {
   const history = useHistory();
 
 
-const handleSubmit = (email, password) => {
+
+// const handleSubmit = (email,password) => {
   
+
   
-  if (email != "webmaster@sireadvertising.com" && password != "password"){
-    alert('credentials not valid')
-  }
-  else{
+//   if (email != "webmaster@sireadvertising.com" && password != "password"){
+//     alert('credentials not valid')
+//   }
+//   else{
    
  
-   history.push('/schedule');
-  }
+//    history.push('/schedule');
+//   }
   
  
- }
+//  }
+
+const [email, setEmail] = useState();
+const [password, setPassword] = useState();
+
+
+const handleSubmit = (email,password) => {
+  
+   
+    if (email != "webmaster@sireadvertising.com" && password != "S1r3adv"){
+        alert('credentials not valid')
+      }
+      else{
+       
+     
+       history.push('/schedule');
+      }
+  
+}
 
 
   return (
@@ -88,7 +109,7 @@ const handleSubmit = (email, password) => {
           <img src={Logo} alt="penn fire logo"/>
 
   
-        <form className={classes.form} noValidate onSubmit={() => handleSubmit("webmaster@sireadvertising.com", "password")}>
+        <form className={classes.form} noValidate onSubmit={() => handleSubmit(email,password)}>
           <TextField
             variant="outlined"
             margin="normal"
@@ -99,6 +120,10 @@ const handleSubmit = (email, password) => {
             name="email"
             autoComplete="email"
             autoFocus
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+           
+           
           />
           <TextField
             variant="outlined"
@@ -110,6 +135,10 @@ const handleSubmit = (email, password) => {
             type="password"
             id="password"
             autoComplete="current-password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+  
+            
           />
           {/* <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
