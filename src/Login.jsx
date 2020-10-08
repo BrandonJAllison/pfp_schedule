@@ -30,9 +30,9 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="www.pennfire.com">
+      
         Penn Fire Protection 
-      </Link>{' '}
+        {' '}
       {new Date().getFullYear()}
       {'.'}
    
@@ -105,7 +105,7 @@ function SignIn() {
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           /> */}
-          <Link to="/schedule"><Button
+          <Link to="/schedule" style={{textDecoration:'none'}}><Button
             type="submit"
             fullWidth
             variant="contained"
