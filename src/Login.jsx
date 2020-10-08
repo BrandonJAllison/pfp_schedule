@@ -12,18 +12,11 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Logo from './assets/footer-logo.png'
+import { useHistory } from "react-router-dom";
 
 
 
 
-
-
-const handleSubmit = (email, password) => {
-  
- 
- 
-
-}
 
 
 function Copyright() {
@@ -66,8 +59,26 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function SignIn() {
+function SignIn({}) {
   const classes = useStyles();
+  const history = useHistory();
+
+
+const handleSubmit = (email, password) => {
+  
+  
+  if (email != "webmaster@sireadvertising.com" && password != "password"){
+    alert('credentials not valid')
+  }
+  else{
+   
+ 
+   history.push('/schedule');
+  }
+  
+ 
+ }
+
 
   return (
     <Container component="main" maxWidth="xs" >
@@ -77,7 +88,7 @@ function SignIn() {
           <img src={Logo} alt="penn fire logo"/>
 
   
-        <form className={classes.form} noValidate onSubmit={() => handleSubmit("brandon.james.allison@gmail.com", "siredeveloper1")}>
+        <form className={classes.form} noValidate onSubmit={() => handleSubmit("webmaster@sireadvertising.com", "password")}>
           <TextField
             variant="outlined"
             margin="normal"
@@ -104,7 +115,7 @@ function SignIn() {
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           /> */}
-          <Link to="/schedule" style={{textDecoration:'none'}}><Button
+       <Button
             type="submit"
             fullWidth
             variant="contained"
@@ -113,7 +124,7 @@ function SignIn() {
             
           >
             Sign In
-          </Button></Link>
+          </Button>
           <Grid container>
             <Grid item xs>
               {/* <Link href="#" variant="body2">
