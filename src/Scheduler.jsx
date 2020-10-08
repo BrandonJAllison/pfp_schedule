@@ -14,11 +14,11 @@ const StyledTableCell = withStyles((theme) => ({
     backgroundColor: theme.palette.common.black,
     color: theme.palette.common.white,
     padding: 2,
-   
+    fontSize: 16,
     fontFamily: "Helvetica Neue",
   },
   body: {
-    fontSize: 15,
+    fontSize: 16,
     fontWeight: 'bold',
     fontFamily: "Helvetica Neue",
     padding: 2,
@@ -91,14 +91,14 @@ export default function CustomizedTables() {
       <Table className={classes.table} aria-label="customized table">
       <TableHead>
           <TableRow>
-            <StyledTableCell align="center" style={{padding: 2}} >Penn Fire Protections</StyledTableCell>
-            <StyledTableCell align="center" >10/05</StyledTableCell>
-            <StyledTableCell align="center" >10/06</StyledTableCell>
-            <StyledTableCell align="center" >10/07</StyledTableCell>
-            <StyledTableCell align="center" >10/08</StyledTableCell>
-            <StyledTableCell align="center" >10/09</StyledTableCell>
-            <StyledTableCell align="center" >10/10</StyledTableCell>
-            <StyledTableCell align="center" >10/11</StyledTableCell>
+            <StyledTableCell align="center" style={{padding: 2}} >Penn Fire Protection</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" >10/05</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true" >10/06</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true">10/07</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true">10/08</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true">10/09</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true">10/10</StyledTableCell>
+            <StyledTableCell align="center" contentEditable="true">10/11</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableHead>
