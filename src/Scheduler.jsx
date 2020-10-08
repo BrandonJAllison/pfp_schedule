@@ -23,8 +23,7 @@ const StyledTableCell = withStyles((theme) => ({
    
    
     padding: 1,
-    borderLeft: '1px solid black',
-    borderRight: '1px solid black'
+   
   },
   
 }))(TableCell);
