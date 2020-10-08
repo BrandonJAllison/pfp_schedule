@@ -12,17 +12,17 @@ import Logo from './assets/footer-logo.png'
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white,
-    padding: 2,
+    backgroundColor: '##D9EEF7',
+    color: theme.palette.common.black,
+    padding: .5,
     fontSize: 16,
-    fontFamily: "Helvetica Neue",
+    
   },
   body: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    fontFamily: "Helvetica Neue",
-    padding: 2,
+    fontSize: 15,
+   
+   
+    padding: 1,
     borderLeft: '1px solid black',
     borderRight: '1px solid black'
   },
@@ -90,13 +90,14 @@ export default function CustomizedTables() {
   return (
    
     <TableContainer component={Paper} >
-      {/* <div style={{background: 'black', padding: '5px', }}>
-        <img src={Logo} style={{height: '60px', marginLeft: '100px'}}/>
-      </div> */}
+      <div style={{background: '#B31538', padding: '5px', display:'flex', justifyContent: 'center', alrignItems: 'center' }}>
+        <img src={Logo} style={{height: '80px',  marginRight: '20px'}}/>
+        <h2 style={{color: 'white'}}>Employee Production <br></br> Schedule</h2>
+      </div>
       <Table className={classes.table} aria-label="customized table">
-      <TableHead>
-          <TableRow >
-            <StyledTableCell align="center" style={{width: '7%', padding: '5px'}} ><img src={Logo} alt = "logo" style={{height: '60px'}}/></StyledTableCell>
+      <TableHead style={{background: '#D9EEF7'}}>
+          <TableRow style={{background: '#D9EEF7'}} >
+            <StyledTableCell align="center" style={{width: '7%', padding: '5px'}} ></StyledTableCell>
             <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/05</StyledTableCell>
             <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/06</StyledTableCell>
             <StyledTableCell align="center" contentEditable="true" style={{width: '10%', padding: '5px'}}>10/07</StyledTableCell>
@@ -108,7 +109,7 @@ export default function CustomizedTables() {
         </TableHead>
         <TableHead>
           <TableRow>
-            <StyledTableCell align="center">Name</StyledTableCell>
+            <StyledTableCell align="center"></StyledTableCell>
             <StyledTableCell align="center" >Monday</StyledTableCell>
             <StyledTableCell align="center" >Tuesday</StyledTableCell>
             <StyledTableCell align="center" >Wednesday</StyledTableCell>
@@ -121,8 +122,8 @@ export default function CustomizedTables() {
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.name} align="center" style={{border: '1px solid black'}}>
-              <StyledTableCell component="th" scope="row" align="center" contentEditable="true">
-                <b>{row.name}</b>
+              <StyledTableCell component="th" scope="row" contentEditable="true">
+                {row.name}
               </StyledTableCell>
               <StyledTableCell align="center" contentEditable="true" >{row.monday}</StyledTableCell>
               <StyledTableCell align="center" contentEditable="true">{row.tuesday}</StyledTableCell>
